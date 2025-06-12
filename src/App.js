@@ -17,7 +17,7 @@ function App() {
         <Header />
 
         <Routes>
-          <Route path='/movieapi' element={
+          <Route path='/' element={
             <Main />
           } />
           <Route path='/intro' element={
