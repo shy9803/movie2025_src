@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+.sub {
+  padding-bottom: 20px;
+}
+
+.sub > h2, .sub > h3 {
+  text-align: center;
+}
+.sub > h2 {
+  line-height: 5rem;
+}
+.sub > h3 {
+  line-height: 4rem;
+}
+
+.sub p, .sub > ul, .sub > table, .sub > form {
+  width: 97%;
+  margin: 12px auto;
+}
+
+.sub > ul {
+  padding-left: 40px;
+}
+.sub li {list-style: circle;}
+
+.sub > table {
+  border-collapse: collapse;
+}
+.sub > table, .sub tr, .sub th, .sub td {
+  border: 1px solid #999;
+}
+.sub > table > thead > tr {
+  background-color: #67c949;
+  text-align: center;
+}
+.sub > table > thead th {
+  padding: 8px;
+}
+.sub > table > thead th:first-child {
+  width: 45%;
+}
+.sub > table > thead th:last-child {
+  width: 55%;
+}
+.sub > table > tbody td {
+  padding: 8px;
+  line-height: 25px;
+}
+
+.sub hr {
+  width: 50%;
+  margin: 30px auto 5px auto;
+  opacity: 0.34;
+}
+
+.sub > form > p {
+  margin: 15px 0;
+}
+.sub > form label {
+  width: 80px;
+  display: inline-block;
+}
+
+.sub > form input[type=text], .sub > form textarea {
+  width: 94%;
+  padding: 4px;
+} 
+.sub > form input[type=text] {
+  min-width: 424px;
+}
+.sub > form > p:last-of-type {
+  align-items: start;
+}
+.sub > form textarea {
+  min-width: 426px;
+  resize: none;
+}
+
+.sub > form > input[type=submit] {
+  border: none;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 3px;
+  margin: 6px 4px;
+  cursor: pointer;
+  float: right;
+}
+.sub > form > input[type=submit]:hover {
+  background-color: #67c949;
+}
+
+.sub::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* Tablet */
+@media all and (max-width: 1023px) and (min-width: 767px) {
+  .sub > form input[type=text], .sub > form textarea {
+    width: 100%;
+    margin-top: 5px;
+  } 
+}
+
+/* Mobile */
+@media all and (max-width: 766px) {
+  .sub > form input[type=text], .sub > form textarea {
+    width: 100%;
+    margin: 5px auto;
+  }
+}

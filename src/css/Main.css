@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* main */
+.main {
+  background: #fafafa;
+  overflow: hidden;
+}
+
+.movie_list {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.movie_list li {
+  background: #fff;
+  box-shadow: 0px 3px 20px #ccc;
+  padding: 20px 3px;
+  width: 47%;
+  max-width: 850px;
+  margin: 20px 10px;
+}
+.movie_list a {
+  display: flex;
+}
+.movie_list img {
+  width: 100%;
+  max-width: 150px;
+  box-shadow: 0px 5px 16px #888;
+  transition: all 0.3s;
+}
+
+.movie_list img, .movie_data {
+  margin: 0 12px;
+}
+
+.movie_title, .movie_year, .movie_genre, .movie_summary, .movie_rating {
+  word-break: break-all; /* 범위 내 텍스트가 넘어가지 않게 */
+}
+.movie_title {
+  font-weight: bold;
+  font-size: 1.125rem; /* 18px */
+}
+.movie_year, .movie_genre, .movie_summary, .movie_rating {
+  font-size: 0.81rem; /* 13px */
+  margin: 5px 6px 5px 0px;
+}
+
+.movie_year {color: #67c949;}
+.movie_summary {
+  padding: 8px 0px;
+  color: #888;
+}
+.movie_rating {
+  color: #e8a213;
+}
+
+.movie_list a:hover img {
+  filter: contrast(1.05) brightness(1.05);
+  transform: translateY(-5%);
+}
+
+/* Tablet */
+@media all and (max-width: 1023px) and (min-width: 767px) {
+  .movie_list li {
+    width: 45.5%;
+  }
+}
+
+/* Mobile */
+@media all and (max-width: 766px) {
+  /* main - home */
+  .movie_list li {
+    width: 96%;
+    margin: 20px auto;
+  }
+}
